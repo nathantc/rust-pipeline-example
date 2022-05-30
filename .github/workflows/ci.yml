@@ -5,6 +5,13 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
+    - name: Invoke CI
+      uses: benc-uk/workflow-dispatch@v1
+      with
+        workflow: CI
+        token: ${{ secrets.PERSONAL_TOKEN }}
+
 
 jobs:
 
