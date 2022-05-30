@@ -10,6 +10,6 @@ mod tests {
 
     #[test]
     fn can_create_a_new_post() {
-        let mut post = Post::new();
+        let _post = Post::new();
     }
 }
